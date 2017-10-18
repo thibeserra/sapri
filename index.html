@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Regex JavaScript</title>
+
+           <style>
+               .input__color {
+                    border-color: blue;
+                    border-width: 1px;
+                }
+
+                .input__color--error {
+                    border-color: red;
+                    border-width: 1px;
+                }
+            </style>
+    </head>
+    <body>
+        <h1 id="h1">Regex JavaScript</h1>
+        <p>
+		<label for="input_cpf_name">C.P.F: </label>
+		<input type="text" id="input_cpf_name" name="input-cpf-name" >
+	</p>
+
+	<p>
+		<button type="button" id="button_salvar" name="button-salvar" onclick="alterInputBorderColorValidate('input_cpf_name', validaCPF('input_cpf_name', 			getValueofInput('input_cpf_name')), 'input__color', 'input__color--error')">Salvar</button>
+	</p>
+		<script src="js/utils/input/input-validator/alterInputBorderColorValidate.js" type="text/javascript"></script>
+		<script src="js/utils/input/input-validator/validaCPF.js" type="text/javascript"></script>
+		<script src="js/utils/input/input-value/getValueofInput.js" type="text/javascript"></script>
+
+    </body>
+</html>
